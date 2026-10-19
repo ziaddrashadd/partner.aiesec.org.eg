@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner with AIESEC in Egypt</title>
+    <meta name="description" content="Partner with AIESEC in Egypt to hire international talent, connect with youth across 18 local branches, and collaborate on national events and social impact projects.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aiesec: {
+                            blue: '#037EF3',
+                            dark: '#0F172A',
+                            charcoal: '#52565E',
+                            light: '#F8FAFC',
+                            border: '#E2E8F0'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Lato', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- AIESEC Brand Font: Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #0F172A;
+            background-color: #FFFFFF;
+        }
+        .swiss-grid {
+            background-size: 64px 64px;
+            background-image: 
+                linear-gradient(to right, rgba(226, 232, 240, 0.5) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(226, 232, 240, 0.5) 1px, transparent 1px);
+        }
+        .img-frame {
+            overflow: hidden;
+            background-color: #F1F5F9;
+        }
+        .img-frame img {
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .img-frame:hover img {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-aiesec-blue selection:text-white">
+
+    <!-- ==========================================
+         1. NAVIGATION BAR
+    =========================================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Lockup -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-9 h-9 bg-aiesec-blue flex items-center justify-center rounded">
+                        <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2L2 19h6l4-7 4 7h6L12 2zm0 11l-3 6h6l-3-6z"/>
+                        </svg>
+                    </div>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="text-xl font-bold tracking-tight text-slate-900">AIESEC</span>
+                        <span class="text-sm font-bold text-aiesec-blue">in Egypt</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-600">
+                    <a href="#what-we-do" class="hover:text-aiesec-blue transition-colors">What We Do</a>
+                    <a href="#events" class="hover:text-aiesec-blue transition-colors">Public Events</a>
+                    <a href="#conferences" class="hover:text-aiesec-blue transition-colors">Conferences</a>
+                    <a href="#traditions" class="hover:text-aiesec-blue transition-colors">Legacy &amp; Global</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="bg-aiesec-blue hover:bg-blue-700 text-white text-sm font-bold px-5 py-2.5 rounded transition-colors">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-btn" class="md:hidden p-2 text-slate-700" aria-label="Toggle Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-5 space-y-4">
+            <a href="#what-we-do" class="block text-sm font-bold text-slate-700 mobile-link">What We Do</a>
+            <a href="#events" class="block text-sm font-bold text-slate-700 mobile-link">Public Events</a>
+            <a href="#conferences" class="block text-sm font-bold text-slate-700 mobile-link">Conferences</a>
+            <a href="#traditions" class="block text-sm font-bold text-slate-700 mobile-link">Legacy &amp; Global</a>
+            <a href="#contact" class="block w-full text-center bg-aiesec-blue text-white text-sm font-bold py-3 rounded mobile-link">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         2. HERO SECTION WITH EDITORIAL PHOTO GRID
+    =========================================== -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-24 swiss-grid border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Copy -->
+                <div class="lg:col-span-7">
+                    <p class="text-xs font-bold uppercase tracking-widest text-aiesec-blue mb-4">
+                        Activating Youth Leadership Since 1948 • AIESEC in Egypt
+                    </p>
+                    <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 leading-[1.14] tracking-tight mb-6">
+                        Connect your organization with Egypt’s next generation of leaders.
+                    </h1>
+                    <p class="text-lg text-aiesec-charcoal leading-relaxed mb-8 max-w-2xl">
+                        AIESEC is the world’s largest youth-led organization developing young people aged 18 to 30 through practical experiences. We partner with companies and institutions across Egypt to bring in international talent, host national youth forums, and run community impact projects.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-aiesec-blue hover:bg-blue-700 text-white font-bold px-8 py-4 rounded text-center transition-colors">
+                            Partner With Us
+                        </a>
+                        <a href="#events" class="bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 font-bold px-8 py-4 rounded text-center transition-colors">
+                            Explore Our Events
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Editorial Photo Collage -->
+                <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <div class="img-frame rounded-lg border border-slate-200 h-52">
+                            <img data-photo="heroMain" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87" alt="AIESEC in Egypt National Plenary" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4 rounded-lg bg-slate-900 text-white">
+                            <div class="text-xs font-bold uppercase tracking-widest text-aiesec-blue">Our Purpose</div>
+                            <p class="text-sm font-bold mt-1 leading-snug">Peace and fulfillment of humankind’s potential.</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4 pt-6">
+                        <div class="img-frame rounded-lg border border-slate-200 h-40">
+                            <img data-photo="heroSecondary" src="https://live.staticflickr.com/65535/53055361498_f028ac7e52_b.jpg" alt="International Youth Delegates" class="w-full h-full object-cover">
+                        </div>
+                        <div class="img-frame rounded-lg border border-slate-200 h-48">
+                            <img data-photo="heroTertiary" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Youth Leadership Workshop" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Clean Architectural Metrics Bar -->
+            <div class="mt-16 bg-white border border-slate-200 rounded-lg grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-slate-200">
+                <div class="p-6 md:p-8">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900">18</div>
+                    <div class="text-sm font-bold text-aiesec-blue mt-1">Local Branches</div>
+                    <p class="text-xs text-slate-500 mt-1">Operating across Egyptian governorates.</p>
+                </div>
+                <div class="p-6 md:p-8">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900">900+</div>
+                    <div class="text-sm font-bold text-aiesec-blue mt-1">Active Members</div>
+                    <p class="text-xs text-slate-500 mt-1">Young people managing local and national operations.</p>
+                </div>
+                <div class="p-6 md:p-8">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900">1973</div>
+                    <div class="text-sm font-bold text-aiesec-blue mt-1">Established in Egypt</div>
+                    <p class="text-xs text-slate-500 mt-1">Over 50 years in Egypt; founded in 1948 globally.</p>
+                </div>
+                <div class="p-6 md:p-8">
+                    <div class="text-3xl md:text-4xl font-bold text-slate-900">102+</div>
+                    <div class="text-sm font-bold text-aiesec-blue mt-1">Countries &amp; Territories</div>
+                    <p class="text-xs text-slate-500 mt-1">Connected through our global exchange network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         3. CREDIBILITY & GOVERNANCE
+    =========================================== -->
+    <section class="py-14 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-10 border-b border-slate-200">
+                <div>
+                    <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Past Collaborations, Event Partners &amp; Board Representation</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm md:text-base font-bold text-slate-500 tracking-wider">
+                    <span>P&amp;G</span>
+                    <span>VODAFONE</span>
+                    <span>PwC</span>
+                    <span>DHL</span>
+                    <span>EFG HERMES ONE</span>
+                    <span>QALAA HOLDINGS</span>
+                    <span>EDUCATLY</span>
+                    <span>SHARWA</span>
+                    <span>CAIRO AD SCHOOL</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10 text-sm">
+                <div>
+                    <h3 class="font-bold text-slate-900 mb-1">Registered Non-Profit Entity</h3>
+                    <p class="text-aiesec-charcoal leading-relaxed">
+                        Officially registered under the Egyptian Ministry of Social Solidarity (Decree No. 787, Unified National Number 22991003908335) and in consultative status with UN ECOSOC globally.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 mb-1">Executive Board Oversight</h3>
+                    <p class="text-aiesec-charcoal leading-relaxed">
+                        Supported by a national Board of Directors featuring senior executives and founders from PwC, Qalaa Holdings, Sharwa, and Educatly.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-slate-900 mb-1">Relevant Youth Background</h3>
+                    <p class="text-aiesec-charcoal leading-relaxed">
+                        Over 47% of the young people in our network come from Business, Engineering, and Technology backgrounds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         4. WHAT WE DO (3 CORE WAYS TO PARTNER)
+    =========================================== -->
+    <section id="what-we-do" class="py-24 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-2xl mb-16">
+                <p class="text-xs font-bold uppercase tracking-widest text-aiesec-blue mb-2">How We Collaborate</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Three ways your organization can work with us.</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- 1. Talent & Teaching -->
+                <div class="border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between hover:border-aiesec-blue transition-colors">
+                    <div>
+                        <div class="img-frame h-48 border-b border-slate-200">
+                            <img data-photo="pillarTalent" src="https://images.unsplash.com/photo-1573164713988-8665fc963095" alt="Global Talent Internships" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8">
+                            <div class="text-xs font-bold uppercase tracking-widest text-aiesec-blue mb-2">01 / Talent</div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Hire International Interns &amp; Teachers</h3>
+                            <p class="text-aiesec-charcoal text-sm leading-relaxed mb-6">
+                                Bring international graduates and young professionals into your company or school across Egypt. Our team handles candidate shortlisting, visa paperwork, and local onboarding.
+                            </p>
+                            <div class="space-y-3 pt-4 border-t border-slate-100 text-sm">
+                                <div>
+                                    <span class="font-bold text-slate-900">Global Talent (6–78 Weeks):</span>
+                                    <span class="text-aiesec-charcoal"> International internships in business, tech, marketing, and engineering.</span>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-slate-900">Global Teacher (6–78 Weeks):</span>
+                                    <span class="text-aiesec-charcoal"> International educators and language instructors for schools and educational institutions.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-4 border-t border-slate-100">
+                        <button onclick="prefillInquiry('Hiring International Talent (Global Talent / Teacher)')" class="text-sm font-bold text-aiesec-blue hover:underline">
+                            Discuss hiring needs &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 2. Events & Employer Branding -->
+                <div class="border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between hover:border-aiesec-blue transition-colors">
+                    <div>
+                        <div class="img-frame h-48 border-b border-slate-200">
+                            <img data-photo="pillarEvents" src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="Employer Branding & Youth Workshops" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8">
+                            <div class="text-xs font-bold uppercase tracking-widest text-aiesec-blue mb-2">02 / Employer Brand</div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Partner on Events &amp; Youth Summits</h3>
+                            <p class="text-aiesec-charcoal text-sm leading-relaxed mb-6">
+                                Connect directly with ambitious youth aged 18–30 across Egypt. Position your company as an employer of choice by participating in our public forums, workshops, and national conferences.
+                            </p>
+                            <div class="space-y-3 pt-4 border-t border-slate-100 text-sm">
+                                <div>
+                                    <span class="font-bold text-slate-900">Direct Youth Engagement:</span>
+                                    <span class="text-aiesec-charcoal"> Deliver career-ready workshops, speak on panels, and run real case studies with attendees.</span>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-slate-900">On-Ground Presence:</span>
+                                    <span class="text-aiesec-charcoal"> Meet young talent face-to-face at our public exhibitions and leadership summits.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-4 border-t border-slate-100">
+                        <button onclick="prefillInquiry('Event Partnership & Employer Branding')" class="text-sm font-bold text-aiesec-blue hover:underline">
+                            Explore event partnerships &rarr;
+                        </button>
+                    </div>
+                </div>
+
+                <!-- 3. CSR & Social Impact -->
+                <div class="border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between hover:border-aiesec-blue transition-colors">
+                    <div>
+                        <div class="img-frame h-48 border-b border-slate-200">
+                            <img data-photo="pillarCsr" src="https://images.unsplash.com/photo-1577896851231-70ef18881754" alt="Community Impact & World's Largest Lesson" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-8">
+                            <div class="text-xs font-bold uppercase tracking-widest text-aiesec-blue mb-2">03 / Community Impact</div>
+                            <h3 class="text-2xl font-bold text-slate-900 mb-3">Collaborate on CSR &amp; Social Projects</h3>
+                            <p class="text-aiesec-charcoal text-sm leading-relaxed mb-6">
+                                Work with our local branches and international volunteers on community development, sustainability awareness, and educational initiatives aligned with the UN Sustainable Development Goals.
+                            </p>
+                            <div class="space-y-3 pt-4 border-t border-slate-100 text-sm">
+                                <div>
+                                    <span class="font-bold text-slate-900">Global Volunteer (4–6 Weeks):</span>
+                                    <span class="text-aiesec-charcoal"> Cross-cultural social impact projects partnering with local NGOs across Egypt.</span>
+                                </div>
+                                <div>
+                                    <span class="font-bold text-slate-900">Educational Initiatives:</span>
+                                    <span class="text-aiesec-charcoal"> Youth awareness projects such as the World’s Largest Lesson and Youth4GlobalGoals.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-8 pb-8 pt-4 border-t border-slate-100">
+                        <button onclick="prefillInquiry('CSR & Community Impact Collaboration')" class="text-sm font-bold text-aiesec-blue hover:underline">
+                            Start an impact project &rarr;
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         5. FLAGSHIP PUBLIC EVENTS (WITH EVENT PHOTOS)
+    =========================================== -->
+    <section id="events" class="py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-2xl mb-16">
+                <p class="text-xs font-bold uppercase tracking-widest text-aiesec-blue mb-2">Public Platforms</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Flagship Public Events</h2>
+                <p class="text-aiesec-charcoal mt-3">
+                    Our largest public-facing gatherings that bring together companies, international guests, and thousands of young people across Egypt.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Youth to Business (Y2B) -->
+                <div class="bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="img-frame h-64 border-b border-slate-200 relative">
+                            <img data-photo="eventY2B" src="https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1400" alt="Youth to Business Summit Cairo" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 text-xs font-bold uppercase tracking-widest text-white bg-slate-900/85 px-3 py-1.5 rounded">
+                                500+ Delegates • 30+ Companies • 20+ Speakers
+                            </span>
+                        </div>
+                        <div class="p-8 md:p-10">
+                            <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-3">Youth to Business (Y2B) Summit</h3>
+                            <p class="text-aiesec-charcoal leading-relaxed mb-6">
+                                Youth to Business connects business leaders and hiring teams directly with ambitious young people in Egypt. Hosted in Cairo, the summit bridges potential to real business opportunities through keynote talks, career-ready workshops, CV reviews, real case studies, and company networking spaces.
+                            </p>
+                            <div class="border-t border-slate-100 pt-5 space-y-2 text-sm text-slate-700">
+                                <p><strong class="text-slate-900">Focus Tracks:</strong> Corporate Careers, Entrepreneurship, Tech &amp; AI, and Creators &amp; Media.</p>
+                                <p><strong class="text-slate-900">Why partner:</strong> Meet talent face-to-face, run hands-on workshops, and position your employer brand.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-8 md:px-10 pb-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <button onclick="prefillInquiry('Youth to Business (Y2B) Forum')" class="bg-slate-900 hover:bg-aiesec-blue text-white text-sm font-bold px-6 py-3 rounded transition-colors">
+                            Partner on Y2B
+                        </button>
+                        <a href="https://youth2business.aiesec.org.eg/" target="_blank" rel="noopener" class="text-xs font-bold text-slate-500 hover:text-aiesec-blue">
+                            View Event Site &nearr;
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Global Village -->
+                <div class="bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="img-frame h-64 border-b border-slate-200 relative">
+                            <img data-photo="eventGV" src="https://images.unsplash.com/photo-1511632765486-a01980e01a18" alt="Global Village Festival AIESEC in Egypt" class="w-full h-full object-cover">
+                            <span class="absolute top-4 left-4 text-xs font-bold uppercase tracking-widest text-white bg-slate-900/85 px-3 py-1.5 rounded">
+                                Cultural Booths • Partner Keynotes • Live Shows
+                            </span>
+                        </div>
+                        <div class="p-8 md:p-10">
+                            <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-3">Global Village Festival</h3>
+                            <p class="text-aiesec-charcoal leading-relaxed mb-6">
+                                Global Village is our flagship cross-cultural festival where international exchange participants showcase their countries’ traditions, cuisines, and performances alongside thousands of Egyptian youth. Hosted at venues such as Nile University in Sheikh Zayed, it features country booths, speaker panels, partner keynotes, and cultural shows.
+                            </p>
+                            <div class="border-t border-slate-100 pt-5 space-y-2 text-sm text-slate-700">
+                                <p><strong class="text-slate-900">Who attends:</strong> Thousands of youth attendees, international exchange participants, embassies, and community partners.</p>
+                                <p><strong class="text-slate-900">Why partner:</strong> High-energy on-ground brand presence, booth activations, and cultural diversity alignment.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-8 md:px-10 pb-8 pt-4 border-t border-slate-100 flex items-center justify-between">
+                        <button onclick="prefillInquiry('Global Village Festival')" class="bg-slate-900 hover:bg-aiesec-blue text-white text-sm font-bold px-6 py-3 rounded transition-colors">
+                            Partner on Global Village
+                        </button>
+                        <a href="https://globalvillage.aiesec.org.eg/" target="_blank" rel="noopener" class="text-xs font-bold text-slate-500 hover:text-aiesec-blue">
+                            View Event Site &nearr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         6. NATIONAL CONFERENCES (INTERACTIVE TABS + PHOTO)
+    =========================================== -->
+    <section id="conferences" class="py-24 bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-2xl mb-12">
+                <p class="text-xs font-bold uppercase tracking-widest text-aiesec-blue mb-2">Annual Leadership Cycle</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">National Conferences</h2>
+                <p class="text-aiesec-charcoal mt-3">
+                    Throughout the year, we host four national conferences that bring together the active members and leaders running our 18 local branches. Partners join us to deliver training sessions, engage with our internal talent pool, and introduce their organizations.
+                </p>
+            </div>
+
+            <!-- Simple Tab Navigation -->
+            <div class="grid grid-cols-2 md:grid-cols-4 border border-slate-200 rounded-t-lg overflow-hidden bg-slate-50">
+                <button onclick="selectConf('momentum')" id="btn-momentum" class="conf-btn py-4 px-6 text-left border-b-2 border-aiesec-blue bg-white font-bold text-slate-900 transition-all">
+                    <span class="block text-xs text-aiesec-blue uppercase tracking-wider">01</span>
+                    Momentum
+                </button>
+                <button onclick="selectConf('activate')" id="btn-activate" class="conf-btn py-4 px-6 text-left border-b-2 border-transparent text-slate-500 hover:text-slate-900 font-bold transition-all">
+                    <span class="block text-xs text-slate-400 uppercase tracking-wider">02</span>
+                    Activate
+                </button>
+                <button onclick="selectConf('fusion')" id="btn-fusion" class="conf-btn py-4 px-6 text-left border-b-2 border-transparent text-slate-500 hover:text-slate-900 font-bold transition-all">
+                    <span class="block text-xs text-slate-400 uppercase tracking-wider">03</span>
+                    Fusion
+                </button>
+                <button onclick="selectConf('axis')" id="btn-axis" class="conf-btn py-4 px-6 text-left border-b-2 border-transparent text-slate-500 hover:text-slate-900 font-bold transition-all">
+                    <span class="block text-xs text-slate-400 uppercase tracking-wider">04</span>
+                    AXIS
+                </button>
+            </div>
+
+            <!-- Tab Content Panel with Dynamic Image -->
+            <div class="border border-t-0 border-slate-200 rounded-b-lg p-8 md:p-12 bg-white">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    <div class="lg:col-span-7">
+                        <span id="conf-subtitle" class="text-xs font-bold uppercase tracking-widest text-aiesec-blue">
+                            Strategy &amp; Leadership Induction
+                        </span>
+                        <h3 id="conf-name" class="text-3xl font-bold text-slate-900 mt-1 mb-4">
+                            Momentum
+                        </h3>
+                        <p id="conf-text" class="text-aiesec-charcoal leading-relaxed mb-6">
+                            Momentum kicks off our operational cycle. Newly appointed local branch leaders and members gather to align on annual goals and build functional skills in marketing, business development, finance, and operations.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-100 text-sm mb-8">
+                            <div>
+                                <span class="text-xs font-bold uppercase text-slate-400 block">Who Attends</span>
+                                <span id="conf-who" class="font-bold text-slate-900">Local branch leaders, team leaders, and active members from across Egypt.</span>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase text-slate-400 block">How Partners Participate</span>
+                                <span id="conf-how" class="font-bold text-slate-900">Deliver workshops, speak to the plenary, and meet our active talent pool.</span>
+                            </div>
+                        </div>
+                        <button id="conf-action" onclick="prefillInquiry('National Conferences')" class="bg-aiesec-blue hover:bg-blue-700 text-white font-bold px-7 py-3.5 rounded transition-colors text-sm">
+                            Partner on Momentum
+                        </button>
+                    </div>
+
+                    <div class="lg:col-span-5">
+                        <div class="img-frame rounded-lg border border-slate-200 h-72">
+                            <img id="conf-img" data-photo="confMomentum" src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="AIESEC National Conference Plenary" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         7. LEGACY GATHERINGS & GLOBAL SUMMITS
+    =========================================== -->
+    <section id="traditions" class="py-24 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <!-- Part A: Legacy & Governance -->
+            <div class="mb-20">
+                <div class="max-w-2xl mb-12">
+                    <p class="text-xs font-bold uppercase tracking-widest text-aiesec-blue mb-2">Institutional Traditions</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Executive &amp; Alumni Gatherings</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="img-frame h-52 border-b border-slate-200">
+                                <img data-photo="legacyIftar" src="https://live.staticflickr.com/65535/53055067099_51bbbfc8a3_b.jpg" alt="AIESEC Alumni & Executive Gathering" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-8">
+                                <h3 class="text-xl font-bold text-slate-900 mb-3">AIESEC Annual Iftar</h3>
+                                <p class="text-aiesec-charcoal text-sm leading-relaxed">
+                                    Held every Ramadan, our Annual Iftar brings together decades of AIESEC in Egypt alumni—now serving as corporate executives and founders—alongside our Board of Directors, partners, and current leadership team.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-8 pb-8 pt-4 border-t border-slate-100">
+                            <button onclick="prefillInquiry('Event Partnership & Employer Branding')" class="text-sm font-bold text-aiesec-blue hover:underline">
+                                Inquire about the Annual Iftar &rarr;
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="img-frame h-52 border-b border-slate-200">
+                                <img data-photo="legacyElections" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="National Elections & Plenary Assembly" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-8">
+                                <h3 class="text-xl font-bold text-slate-900 mb-3">National Elections &amp; Plenary</h3>
+                                <p class="text-aiesec-charcoal text-sm leading-relaxed">
+                                    Our formal annual assembly where representatives from all 18 local branches convene with alumni and partners to elect the incoming Country President of AIESEC in Egypt.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-8 pb-8 pt-4 border-t border-slate-100">
+                            <button onclick="prefillInquiry('Event Partnership & Employer Branding')" class="text-sm font-bold text-aiesec-blue hover:underline">
+                                Inquire about National Elections &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part B: Global & Regional Hosted Summits -->
+            <div>
+                <div class="max-w-2xl mb-12">
+                    <p class="text-xs font-bold uppercase tracking-widest text-aiesec-blue mb-2">International Scale</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Global &amp; Regional Summits Hosted in Egypt</h2>
+                    <p class="text-aiesec-charcoal mt-3 text-sm md:text-base">
+                        AIESEC in Egypt has a strong history of hosting regional and global summits, bringing international youth delegates and global visibility to our partners in Egypt.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="img-frame h-52 border-b border-slate-200">
+                                <img data-photo="globalIC" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87" alt="AIESEC International Congress Hosted in Egypt" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-8">
+                                <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Global Summit</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">AIESEC International Congress (IC)</h3>
+                                <p class="text-aiesec-charcoal text-sm leading-relaxed">
+                                    The flagship global summit of the AIESEC network, hosted in Egypt with delegations from over 100 countries, institutional guests, and international partners.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-8 pb-8 pt-4 border-t border-slate-100">
+                            <button onclick="prefillInquiry('General Partnership Inquiry')" class="text-sm font-bold text-aiesec-blue hover:underline">
+                                Connect regarding global summits &rarr;
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-slate-200 rounded-lg overflow-hidden flex flex-col justify-between">
+                        <div>
+                            <div class="img-frame h-52 border-b border-slate-200">
+                                <img data-photo="globalMEA" src="https://images.unsplash.com/photo-1531482615713-2afd69097998" alt="MEAXLDS Regional Leadership Seminar" class="w-full h-full object-cover">
+                            </div>
+                            <div class="p-8">
+                                <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Middle East &amp; Africa</span>
+                                <h3 class="text-xl font-bold text-slate-900 mt-1 mb-3">MEAXLDS Regional Leadership Seminar</h3>
+                                <p class="text-aiesec-charcoal text-sm leading-relaxed">
+                                    The Middle East &amp; Africa Exchange and Leadership Development Seminar hosted in Egypt, uniting youth leaders from across the region for cross-border collaboration.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-8 pb-8 pt-4 border-t border-slate-100">
+                            <button onclick="prefillInquiry('General Partnership Inquiry')" class="text-sm font-bold text-aiesec-blue hover:underline">
+                                Connect regarding regional summits &rarr;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ==========================================
+         8. CONTACT & PARTNERSHIP INQUIRY FORM
+    =========================================== -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left Column: Direct Info -->
+                <div class="lg:col-span-5">
+                    <p class="text-xs font-bold uppercase tracking-widest text-aiesec-blue mb-2">Start a Conversation</p>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight mb-4">
+                        Let’s discuss how we can work together.
+                    </h2>
+                    <p class="text-aiesec-charcoal leading-relaxed mb-8">
+                        Leave your contact details and let us know what you are interested in exploring. Our National External Relations and Business Development team will reach out to schedule an introductory call.
+                    </p>
+
+                    <div class="border-t border-slate-200 pt-6 space-y-4 text-sm">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-slate-400 block">Official Email</span>
+                            <a href="mailto:egypt@aiesec.net" class="font-bold text-slate-900 hover:text-aiesec-blue">egypt@aiesec.net</a>
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-widest text-slate-400 block">National Office</span>
+                            <span class="text-aiesec-charcoal">12A/2 St. Mostshar Hussien Hamouda - El Laslki, New Maadi, Cairo, Egypt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Clean Form (With Phone Number, Zero Fake Pricing Tiers) -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-50 border border-slate-200 rounded-lg p-8 md:p-10">
+                        
+                        <form id="inquiry-form" onsubmit="submitForm(event)" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Full Name *</label>
+                                    <input type="text" id="name" name="name" required placeholder="Your full name" class="w-full px-4 py-3 bg-white border border-slate-300 rounded text-sm text-slate-900 focus:border-aiesec-blue focus:outline-none">
+                                </div>
+                                <div>
+                                    <label for="company" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Company / Organization *</label>
+                                    <input type="text" id="company" name="company" required placeholder="Organization name" class="w-full px-4 py-3 bg-white border border-slate-300 rounded text-sm text-slate-900 focus:border-aiesec-blue focus:outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Work Email *</label>
+                                    <input type="email" id="email" name="email" required placeholder="name@company.com" class="w-full px-4 py-3 bg-white border border-slate-300 rounded text-sm text-slate-900 focus:border-aiesec-blue focus:outline-none">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required placeholder="+20 10 0000 0000" class="w-full px-4 py-3 bg-white border border-slate-300 rounded text-sm text-slate-900 focus:border-aiesec-blue focus:outline-none">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="role" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Job Title / Role</label>
+                                    <input type="text" id="role" name="role" placeholder="e.g. HR Manager, Marketing Lead" class="w-full px-4 py-3 bg-white border border-slate-300 rounded text-sm text-slate-900 focus:border-aiesec-blue focus:outline-none">
+                                </div>
+                                <div>
+                                    <label for="interest" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Area of Interest *</label>
+                                    <select id="interest" name="interest" required class="w-full px-4 py-3 bg-white border border-slate-300 rounded text-sm text-slate-900 focus:border-aiesec-blue focus:outline-none">
+                                        <option value="" disabled selected>Select how you want to partner...</option>
+                                        <option value="Hiring International Talent (Global Talent / Teacher)">Hiring International Talent (Global Talent / Teacher)</option>
+                                        <option value="Event Partnership & Employer Branding">Event Partnership &amp; Employer Branding</option>
+                                        <option value="Youth to Business (Y2B) Forum">Youth to Business (Y2B) Forum</option>
+                                        <option value="Global Village Festival">Global Village Festival</option>
+                                        <option value="National Conferences">National Conferences</option>
+                                        <option value="CSR & Community Impact Collaboration">CSR &amp; Community Impact Collaboration</option>
+                                        <option value="General Partnership Inquiry">General Partnership Inquiry</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Message (Optional)</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Share any brief context on what you are looking to explore..." class="w-full px-4 py-3 bg-white border border-slate-300 rounded text-sm text-slate-900 focus:border-aiesec-blue focus:outline-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-aiesec-blue hover:bg-blue-700 text-white font-bold py-4 px-6 rounded transition-colors text-sm">
+                                Send Inquiry
+                            </button>
+                        </form>
+
+                        <!-- Confirmation View -->
+                        <div id="success-message" class="hidden py-8 text-center space-y-4">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 text-aiesec-blue flex items-center justify-center mx-auto">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-900" id="success-title">Thank you for reaching out.</h3>
+                            <p class="text-sm text-aiesec-charcoal max-w-md mx-auto">
+                                We have received your details. A representative from our national team will contact you shortly via email or phone.
+                            </p>
+                            <div class="pt-4">
+                                <button onclick="resetForm()" class="text-xs font-bold uppercase tracking-wider text-aiesec-blue hover:underline">
+                                    Submit another inquiry
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         9. FOOTER
+    =========================================== -->
+    <footer class="bg-slate-900 text-slate-400 py-14 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 pb-10 border-b border-slate-800">
+                <div>
+                    <div class="flex items-baseline gap-1.5">
+                        <span class="text-xl font-bold text-white">AIESEC</span>
+                        <span class="text-sm font-bold text-aiesec-blue">in Egypt</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-2">
+                        الجمعية المصرية للتبادل الشبابي الدولي • Registered under the Ministry of Social Solidarity (Decree No. 787)
+                    </p>
+                    <p class="text-xs text-slate-500 mt-1">
+                        Unified National Entity No: 22991003908335 • EGIPA Trademark Reg. No: 240363 / 637685 / 637687
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-6 text-xs font-bold text-slate-300">
+                    <a href="https://aiesec.org.eg/" target="_blank" rel="noopener" class="hover:text-white transition-colors">AIESEC in Egypt</a>
+                    <a href="https://youth2business.aiesec.org.eg/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Y2B Portal</a>
+                    <a href="https://globalvillage.aiesec.org.eg/" target="_blank" rel="noopener" class="hover:text-white transition-colors">Global Village Portal</a>
+                    <a href="https://aiesec.org/" target="_blank" rel="noopener" class="hover:text-white transition-colors">AIESEC Global</a>
+                    <a href="mailto:egypt@aiesec.net" class="hover:text-white transition-colors">egypt@aiesec.net</a>
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>© 2026 AIESEC in Egypt. All rights reserved.</p>
+                <p>partner.aiesec.org.eg</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         JAVASCRIPT & CENTRAL PHOTO CONFIGURATION
+    =========================================== -->
+    <script>
+        /**
+         * MCVP IM NOTE:
+         * Swap any URL below with local repository files (e.g. "./assets/y2b-2026.jpg")
+         * or direct exports from the AIESEC Flickr / National Google Drive folder.
+         */
+        const SITE_PHOTOS = {
+            heroMain: "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
+            heroSecondary: "https://live.staticflickr.com/65535/53055361498_f028ac7e52_b.jpg",
+            heroTertiary: "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+            pillarTalent: "https://images.unsplash.com/photo-1573164713988-8665fc963095",
+            pillarEvents: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+            pillarCsr: "https://images.unsplash.com/photo-1577896851231-70ef18881754",
+            eventY2B: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1400",
+            eventGV: "https://images.unsplash.com/photo-1511632765486-a01980e01a18",
+            confMomentum: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
+            confActivate: "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+            confFusion: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+            confAxis: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1400",
+            legacyIftar: "https://live.staticflickr.com/65535/53055067099_51bbbfc8a3_b.jpg",
+            legacyElections: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0",
+            globalIC: "https://images.unsplash.com/photo-1540575467063-178a50c2df87",
+            globalMEA: "https://images.unsplash.com/photo-1531482615713-2afd69097998"
+        };
+
+        // Apply SITE_PHOTOS automatically on load
+        document.querySelectorAll('[data-photo]').forEach(img => {
+            const key = img.getAttribute('data-photo');
+            if (SITE_PHOTOS[key]) {
+                img.src = SITE_PHOTOS[key];
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // National Conferences Switcher (Updates Text + Photo)
+        const conferences = {
+            momentum: {
+                subtitle: 'Strategy & Leadership Induction',
+                name: 'Momentum',
+                text: 'Momentum kicks off our operational cycle. Newly appointed local branch leaders and members gather to align on annual goals and build functional skills in marketing, business development, finance, and operations.',
+                who: 'Local branch leaders, team leaders, and active members from across Egypt.',
+                how: 'Deliver workshops, speak to the plenary, and meet our active talent pool.',
+                buttonText: 'Partner on Momentum',
+                photo: SITE_PHOTOS.confMomentum
+            },
+            activate: {
+                subtitle: 'Operational Execution Summit',
+                name: 'Activate',
+                text: 'Activate prepares our local branches for peak operational seasons. Teams come together for intensive practical sessions focused on project management, exchange execution, and partner servicing.',
+                who: 'Operational team leaders and high-performing members across 18 local branches.',
+                how: 'Run practical business case discussions and connect with execution-focused youth.',
+                buttonText: 'Partner on Activate',
+                photo: SITE_PHOTOS.confActivate
+            },
+            fusion: {
+                subtitle: 'Mid-Term Review & Acceleration',
+                name: 'Fusion',
+                text: 'Fusion unites our national network halfway through the term to review progress and prepare for summer operations. Held right ahead of the graduation and summer recruitment season.',
+                who: 'National plenary, graduating seniors, and rising youth leaders.',
+                how: 'Introduce graduate career opportunities, internships, and company workshops.',
+                buttonText: 'Partner on Fusion',
+                photo: SITE_PHOTOS.confFusion
+            },
+            axis: {
+                subtitle: 'Annual Culmination & Leadership Transition',
+                name: 'AXIS',
+                text: 'AXIS marks the culmination of our annual leadership cycle, where outgoing branch leaders transition their roles to the incoming generation and celebrate full-year achievements across Egypt.',
+                who: 'Outgoing local branch executives, incoming directors, and alumni.',
+                how: 'Connect with our most experienced graduating leaders entering the job market.',
+                buttonText: 'Partner on AXIS',
+                photo: SITE_PHOTOS.confAxis
+            }
+        };
+
+        function selectConf(key) {
+            const item = conferences[key];
+            if (!item) return;
+
+            document.querySelectorAll('.conf-btn').forEach(btn => {
+                btn.className = 'conf-btn py-4 px-6 text-left border-b-2 border-transparent text-slate-500 hover:text-slate-900 font-bold transition-all';
+                btn.querySelector('span').className = 'block text-xs text-slate-400 uppercase tracking-wider';
+            });
+
+            const activeBtn = document.getElementById('btn-' + key);
+            activeBtn.className = 'conf-btn py-4 px-6 text-left border-b-2 border-aiesec-blue bg-white font-bold text-slate-900 transition-all';
+            activeBtn.querySelector('span').className = 'block text-xs text-aiesec-blue uppercase tracking-wider';
+
+            document.getElementById('conf-subtitle').textContent = item.subtitle;
+            document.getElementById('conf-name').textContent = item.name;
+            document.getElementById('conf-text').textContent = item.text;
+            document.getElementById('conf-who').textContent = item.who;
+            document.getElementById('conf-how').textContent = item.how;
+            document.getElementById('conf-img').src = item.photo;
+
+            const actionBtn = document.getElementById('conf-action');
+            actionBtn.textContent = item.buttonText;
+        }
+
+        // Smooth scroll to form and pre-select dropdown
+        function prefillInquiry(optionValue) {
+            const selectEl = document.getElementById('interest');
+            if (selectEl) {
+                selectEl.value = optionValue;
+            }
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Form Submission State
+        function submitForm(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            document.getElementById('success-title').textContent = `Thank you, ${name}.`;
+            document.getElementById('inquiry-form').classList.add('hidden');
+            document.getElementById('success-message').classList.remove('hidden');
+        }
+
+        function resetForm() {
+            document.getElementById('inquiry-form').reset();
+            document.getElementById('success-message').classList.add('hidden');
+            document.getElementById('inquiry-form').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
