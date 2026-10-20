@@ -590,26 +590,27 @@
                 <!-- Global Village - Uses gv26.jpg + Interactive Switcher to gv26-sponsors.jpg -->
                 <div class="bg-white border border-slate-200 rounded-sm overflow-hidden shadow-sm flex flex-col justify-between group">
                     <div>
-                        <div class="editorial-card h-80 relative bg-aiesec-navy">
-                            <img id="gv-card-img" src="./images/gv26.jpg" alt="Global Village 2026 Festival" class="w-full h-full object-cover object-center">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#060D1A] via-[#060D1A]/25 to-transparent"></div>
-                            <div class="absolute top-6 left-6 bg-aiesec-blue text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-sm">
-                                Egypt's Largest Cultural Exchange Event
-                            </div>
-                            <!-- Interactive Photo Toggle Pill -->
-                            <div class="absolute top-6 right-6 flex bg-black/60 backdrop-blur-sm p-1 rounded-sm border border-white/20">
-                                <button type="button" onclick="toggleGvPhoto('crowd')" id="gv-btn-crowd" class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 bg-aiesec-blue text-white rounded-sm transition-all">
-                                    Festival Crowd
-                                </button>
-                                <button type="button" onclick="toggleGvPhoto('sponsors')" id="gv-btn-sponsors" class="text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 text-white/80 hover:text-white rounded-sm transition-all">
-                                    Sponsor Board
-                                </button>
-                            </div>
-                            <div class="absolute bottom-6 left-6 right-6 text-white">
-                                <h3 class="text-3xl font-black">Global Village</h3>
-                                <p class="text-sm text-slate-200 mt-1">High-energy cultural exhibition uniting nations and thousands of youth.</p>
-                            </div>
-                        </div>
+<div class="editorial-card h-80 relative bg-aiesec-navy group/slider">
+    <img id="slider-gv" src="./images/gv26.jpg" alt="Global Village Festival" class="w-full h-full object-cover object-center transition-opacity duration-300">
+    <div class="absolute inset-0 bg-gradient-to-t from-[#060D1A] via-[#060D1A]/25 to-transparent pointer-events-none"></div>
+    
+    <div class="absolute top-6 left-6 bg-aiesec-blue text-white text-[11px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-sm z-10">
+        Egypt's Largest Cultural Exchange Event
+    </div>
+
+    <!-- Simple Left/Right Arrows (Appear on Hover) -->
+    <button type="button" onclick="moveSlider('slider-gv', -1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-black/40 hover:bg-aiesec-blue text-white backdrop-blur-sm opacity-0 group-hover/slider:opacity-100 transition-all z-20">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+    </button>
+    <button type="button" onclick="moveSlider('slider-gv', 1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-black/40 hover:bg-aiesec-blue text-white backdrop-blur-sm opacity-0 group-hover/slider:opacity-100 transition-all z-20">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+    </button>
+
+    <div class="absolute bottom-6 left-6 right-6 text-white z-10 pointer-events-none">
+        <h3 class="text-3xl font-black">Global Village</h3>
+        <p class="text-sm text-slate-200 mt-1">High-energy cultural exhibition uniting nations and thousands of youth.</p>
+    </div>
+</div>
                         <div class="p-8 lg:p-10">
                             <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                                 Global Village is our largest public festival where international exchange participants represent their countries through cultural booths, flags, traditions, and live shows alongside thousands of young people in Egypt. It offers consumer brands massive on-ground foot traffic and experiential marketing reach.
@@ -1040,22 +1041,36 @@
             });
         }
 
-        // 3. Global Village Card Photo Switcher (gv26.jpg vs gv26-sponsors.jpg)
-        function toggleGvPhoto(view) {
-            const imgEl = document.getElementById('gv-card-img');
-            const btnCrowd = document.getElementById('gv-btn-crowd');
-            const btnSponsors = document.getElementById('gv-btn-sponsors');
+// Universal Image Slider Engine
+const sliderData = {
+    'slider-gv': {
+        currentIndex: 0,
+        images: [
+            './images/gv26.jpg', 
+            './images/gv26-sponsors.jpg'
+        ]
+    }
+    // You can add more events here easily in the future:
+    // 'slider-momentum': { currentIndex: 0, images: ['./images/momentum1.jpg', './images/momentum2.jpg'] }
+};
 
-            if (view === 'sponsors') {
-                imgEl.src = './images/gv26-sponsors.jpg';
-                btnSponsors.className = 'text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 bg-aiesec-blue text-white rounded-sm transition-all';
-                btnCrowd.className = 'text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 text-white/80 hover:text-white rounded-sm transition-all';
-            } else {
-                imgEl.src = './images/gv26.jpg';
-                btnCrowd.className = 'text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 bg-aiesec-blue text-white rounded-sm transition-all';
-                btnSponsors.className = 'text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 text-white/80 hover:text-white rounded-sm transition-all';
-            }
-        }
+function moveSlider(sliderId, direction) {
+    const slider = sliderData[sliderId];
+    if (!slider) return;
+
+    // Calculate new index
+    slider.currentIndex += direction;
+    if (slider.currentIndex >= slider.images.length) slider.currentIndex = 0;
+    if (slider.currentIndex < 0) slider.currentIndex = slider.images.length - 1;
+
+    // Apply the new image with a quick fade effect
+    const imgEl = document.getElementById(sliderId);
+    imgEl.style.opacity = '0.7';
+    setTimeout(() => {
+        imgEl.src = slider.images[slider.currentIndex];
+        imgEl.style.opacity = '1';
+    }, 150);
+}
 
         // 4. National Conferences Switcher
         const conferences = {
